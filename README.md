@@ -14,6 +14,19 @@ Servicio de Notificaiones para Willy App, desarrollado en NodeJS / ExpressJs  y 
 - `lib`: Contiene las clases y metodos relacionados con la lógica.
 - `models`: Modelos de datos.
 
+## Rutas
+
+## Notifications Route
+
+     Verb    |              Path              |      Action     |         Description
+------------ | ------------------------------ | --------------- | ------------------------------
+    GET         /notifications                      getAll           Used for show all notifications
+    GET         /notifications/:userId            getAllByUser       Used for show all notifications
+    GET         /notifications/:userId/:id        ggetOneByUser      Used for show one notification of one user
+    GET         /notifications/:id                   getOne          Used for show one notification
+    PUT         /notifications/:id                   update          Used for update one notification
+    DELETE      /notifications/:id                   delete          Used for delete one notification
+
 
 ## WORKING
 - Update notification
@@ -21,3 +34,7 @@ Servicio de Notificaiones para Willy App, desarrollado en NodeJS / ExpressJs  y 
 - Tests
 - Analizar API CORE y ver que datos voy a recibir -> Adaptar base a ello
 - Error handler
+
+## ARQUITECTURA
+- Crea modelo de Email -> Solo existen dos tipos de notificación (Push movil y correo)
+- Crear modelo de Eventos, cada evento llamara a notificaciones/email cuantas veces sea necesario
