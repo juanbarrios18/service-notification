@@ -19,7 +19,6 @@ Servicio de Notificaiones para Willy App, desarrollado en NodeJS / ExpressJs  y 
 ## Notifications Route
 
      Verb    |              Path              |      Action     |         Description
------------- | ------------------------------ | --------------- | ------------------------------
     GET      |   /notifications               |     getAll      |     Used for show all notifications
     GET      |   /notifications/:userId       |   getAllByUser  |     Used for show all notifications
     GET      |   /notifications/:userId/:id   |   ggetOneByUser |     Used for show one notification of one user
