@@ -14,17 +14,18 @@ Servicio de Notificaiones para Willy App, desarrollado en NodeJS / ExpressJs  y 
 - `lib`: Contiene las clases y metodos relacionados con la lógica.
 - `models`: Modelos de datos.
 
+
 ## Rutas
 
-## Notifications Route
+### Notifications Route
 
-     Verb    |              Path              |      Action     |         Description
-    GET      |   /notifications               |     getAll      |     Used for show all notifications
-    GET      |   /notifications/:userId       |   getAllByUser  |     Used for show all notifications
-    GET      |   /notifications/:userId/:id   |   ggetOneByUser |     Used for show one notification of one user
-    GET      |   /notifications/:id           |      getOne     |     Used for show one notification
-    PUT      |   /notifications/:id           |      update     |     Used for update one notification
-    DELETE   |   /notifications/:id           |      delete     |     Used for delete one notification
+    Verb     |           Path                 |   Action        |         Description
+    GET      |   /notifications               |   getAll        |   Used for show all notifications
+    GET      |   /notifications/:userId       |   getAllByUser  |   Used for show all notifications
+    GET      |   /notifications/:userId/:id   |   getOneByUser  |   Used for show one notification of one user
+    GET      |   /notifications/:id           |   getOne        |   Used for show one notification
+    PUT      |   /notifications/:id           |   update        |   Used for update one notification
+    DELETE   |   /notifications/:id           |   delete        |   Used for delete one notification
 
 
 ## WORKING
